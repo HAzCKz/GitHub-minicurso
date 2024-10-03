@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Engraçada para o Papai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1 {
+            color: #2e8b57;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Papai!</h1>
+    <p>Você é o melhor pai do mundo! Mas às vezes você precisa de uma piada!</p>
+    <button onclick="mostrarPiada()">Clique aqui para uma piada!</button>
+    <p id="piada" style="margin-top: 20px;"></p>
+
+    <script>
+        function mostrarPiada() {
+            const piadas = [
+                "Por que o livro de matemática se suicidou? Porque tinha muitos problemas!",
+                "O que o zero disse para o oito? Que cinto legal!",
+                "Por que a galinha atravessou a estrada? Para ir ao bar da esquina!",
+            ];
+            const piadaAleatoria = piadas[Math.floor(Math.random() * piadas.length)];
+            document.getElementById('piada').innerText = piadaAleatoria;
+        }
+    </script>
+</body>
+</html>
