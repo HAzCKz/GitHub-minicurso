@@ -1,1 +1,1 @@
-Esse é um repositório sobre o minicurso que ministrei sobre GitHub.
+### Este é um repositório sobre o minicurso que ministrei abordando os conceitos introdutórios do GitHub.
